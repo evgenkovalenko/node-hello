@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - echo "Installing dependencies..."
+      
+  pre_build:
+    commands:
+      - echo "Running pre-build tasks..."
+      
+  build:
+    commands:
+      - echo "Building application..."
+
+  post_build:
+    commands:
+      - echo "Running post-build tasks..."
+      - echo "Build completed"
